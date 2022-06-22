@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  height: 5.625rem;
+  align-items: center;
+  margin-left: 1.563rem;
+
+  .header__logo {
+  }
+
+  .header__my-name {
+    padding-left: 0.549rem;
+    font-family: "DM Sans", sans-serif;
+  }
+  .header__navbar {
+    display: none;
+  }
+  .header__mobile-menu-toggle {
+    position: fixed;
+    right: 50px;
+    background-color: transparent;
+    border: 0;
+  }
+}
