@@ -1,5 +1,6 @@
 # portfolio-website
 
-Site to display my projects. 
+Site to display my projects.
+Present TUES 28 3pm.
 
 Live Demo:
