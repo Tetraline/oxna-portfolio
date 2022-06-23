@@ -1,16 +1,18 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/functions" as *;
 
-.headline {
+.hero {
   margin: 16px;
   padding: 37px;
   height: 52rem;
   background-color: $accent-color-background-blue;
-  .headline__subtitle {
+  .hero__subtitle {
+    margin-top: 60px;
     color: $text-color-grey;
     font-size: calc(pxToVw(20) * 100vw);
   }
-  .headline__title {
+  .hero__title {
+    margin-top: 16px;
     color: $text-color-dark-blue;
     font-size: calc(pxToVw(64) * 100vw);
     line-height: 120%;
@@ -22,10 +24,10 @@
       background-position: calc(pxToVw(10) * 100vw) calc(pxToVw(47) * 100vw);
       background-repeat: repeat-x;
       background-size: 1px calc(pxToVw(30) * 100vw);
-      background-size: 1px 30px;
     }
   }
-  .headline__button {
+  .hero__button {
+    margin-top: 101px;
     color: $text-color-dark-blue;
     background: $accent-color-blue;
     border: 2px solid $text-color-dark-blue;

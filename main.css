@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -37,30 +38,32 @@ u {
   border: 0;
 }
 
-.headline {
+.hero {
   margin: 16px;
   padding: 37px;
   height: 52rem;
   background-color: #f7fafa;
 }
-.headline .headline__subtitle {
+.hero .hero__subtitle {
+  margin-top: 60px;
   color: #8c9cb1;
   font-size: 4.6728971963vw;
 }
-.headline .headline__title {
+.hero .hero__title {
+  margin-top: 16px;
   color: #272643;
   font-size: 14.953271028vw;
   line-height: 120%;
 }
-.headline .headline__title u {
+.hero .hero__title u {
   text-decoration: none;
   background-image: linear-gradient(#bae8e8, #bae8e8);
   background-position: 2.3364485981vw 10.9813084112vw;
   background-repeat: repeat-x;
   background-size: 1px 7.0093457944vw;
-  background-size: 1px 30px;
 }
-.headline .headline__button {
+.hero .hero__button {
+  margin-top: 101px;
   color: #272643;
   background: #bae8e8;
   border: 2px solid #272643;
@@ -73,7 +76,7 @@ u {
   font-size: 4.6728971963vw;
   line-height: 1.5rem;
 }
-.headline .headline__button img {
+.hero .hero__button img {
   position: relative;
   top: 0.6rem;
 }
