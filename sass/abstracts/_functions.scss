@@ -1,0 +1,6 @@
+// For the mobile site, the Figma design gives measurements in px
+// on an iPhone 428px wide. So that the site scales for wider or thinner
+// phones, this function returns the ratio to vw needed to properly scale.
+@function pxToVw($px) {
+  @return calc($px / 428);
+}
