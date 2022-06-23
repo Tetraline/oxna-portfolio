@@ -45,7 +45,7 @@ u {
 }
 .headline .headline__subtitle {
   color: #8c9cb1;
-  font-size: 1.25rem;
+  font-size: 4.6728971963vw;
 }
 .headline .headline__title {
   color: #272643;
@@ -64,11 +64,9 @@ u {
   color: #272643;
   background: #bae8e8;
   border: 2px solid #272643;
-  box-shadow: 0px 20x 40px rgba(185, 192, 192, 0.19);
   border-radius: 7px;
-  padding: 6.308411215vw 7.3598130841vw;
-  padding-top: 1.688rem;
-  padding-bottom: 1.688rem;
+  width: 100%;
+  padding: 1.6875rem 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;

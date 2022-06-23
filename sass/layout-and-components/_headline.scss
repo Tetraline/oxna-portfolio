@@ -8,7 +8,7 @@
   background-color: $accent-color-background-blue;
   .headline__subtitle {
     color: $text-color-grey;
-    font-size: 1.25rem;
+    font-size: calc(pxToVw(20) * 100vw);
   }
   .headline__title {
     color: $text-color-dark-blue;
@@ -29,12 +29,10 @@
     color: $text-color-dark-blue;
     background: $accent-color-blue;
     border: 2px solid $text-color-dark-blue;
-    box-shadow: 0px 20x 40px rgba(185, 192, 192, 0.19);
     border-radius: 7px;
+    width: 100%;
     //padding is top&bottom_left&right
-    padding: calc(pxToVw(27) * 100vw) calc(pxToVw(31.5) * 100vw);
-    padding-top: 1.688rem;
-    padding-bottom: 1.688rem;
+    padding: 1.6875rem 0;
 
     font-family: "Inter", sans-serif;
     font-style: normal;
