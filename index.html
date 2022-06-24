@@ -40,20 +40,54 @@
       </button>
     </section>
     <section class="skills">
-      <h1 class="skills__heading">Technical Skills</h1>
+      <h2 class="skills__heading"><u>Technical Skills</u></h2>
+      <!-- 
+      These icons are imported using CSS masks, this is the only way
+      I have found to colour them using my main.css (without using
+      loads of Javascript).
+      In other words, I want the colour of these icons to be defined
+      by $svg-blue-fill in my variables.scss.
+      96% support on https://caniuse.com/css-masks
+      , working on my Chrome, Firefox, iPhone Safari. -->
       <ul class="skills__list">
         <li>
-          <svg width="100" height="100"></svg>
-          GIT
+          <img style="-webkit-mask: url(./img/git.svg) no-repeat center;"" />
+          <p>GIT</p>
         </li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>SCSS</li>
-        <li>BEM</li>
-        <li>React</li>
-        <li>Java</li>
-        <li>Spring Boot</li>
+        <li>
+          <img style="-webkit-mask: url(./img/html5.svg) no-repeat center" />
+          <p>HTML5</p>
+        </li>
+        <li>
+          <img style="-webkit-mask: url(./img/css3.svg) no-repeat center" />
+          <p>CSS3</p>
+        </li>
+        <li>
+          <img
+            style="-webkit-mask: url(./img/javascript.svg) no-repeat center"
+          />
+          <p>Javascript</p>
+        </li>
+        <li>
+          <img style="-webkit-mask: url(./img/scss.svg) no-repeat center" />
+          <p>SCSS</p>
+        </li>
+        <li>
+          <img style="-webkit-mask: url(./img/bem.svg) no-repeat center" />
+          <p>BEM</p>
+        </li>
+        <li>
+          <img style="-webkit-mask: url(./img/react.svg) no-repeat center" />
+          <p>React</p>
+        </li>
+        <li>
+          <img style="-webkit-mask: url(./img/java.svg) no-repeat center" />
+          <p>Java</p>
+        </li>
+        <li>
+          <img style="-webkit-mask: url(./img/git.svg) no-repeat center" />
+          <p>Spring Boot</p>
+        </li>
       </ul>
     </section>
     <section class="projects">

@@ -6,16 +6,12 @@
   padding: 0;
 }
 
-* {
-  font-family: "Inter", sans-serif;
+ul {
+  list-style: none;
 }
 
-u {
-  text-decoration: none;
-  background-image: linear-gradient(#bae8e8, #bae8e8);
-  background-position: 10px 47px;
-  background-repeat: repeat-x;
-  background-size: 1px 30px;
+* {
+  font-family: "Inter", sans-serif;
 }
 
 .header {
@@ -79,4 +75,45 @@ u {
 .hero .hero__button img {
   position: relative;
   top: 0.6rem;
+}
+
+.skills u {
+  text-decoration: none;
+  background-image: linear-gradient(#bae8e8, #bae8e8);
+  background-position: 10px 1.4375rem;
+  background-repeat: repeat-x;
+  background-size: 1px 0.9375rem;
+}
+.skills .skills__heading {
+  padding-top: 7rem;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.skills .skills__list {
+  padding-top: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  color: #8c9cb1;
+  font-weight: 500;
+}
+.skills .skills__list li {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills .skills__list li > img {
+  background-color: #a3e1de;
+  height: 100px;
+  width: 100px;
+}
+.skills .skills__list li > img:hover {
+  background-color: red;
+  transform-origin: center;
+  transform: scale(1.1);
+  transition: 0.4s ease-out;
 }

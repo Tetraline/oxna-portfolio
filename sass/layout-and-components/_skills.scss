@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+
+.skills {
+  u {
+    text-decoration: none;
+    background-image: linear-gradient($accent-color-blue, $accent-color-blue);
+    // Not really the intended use of linear-gradient, but it works
+    background-position: 10px 1.4375rem;
+    background-repeat: repeat-x;
+    background-size: 1px 0.9375rem;
+  }
+  .skills__heading {
+    padding-top: 7rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+  .skills__list {
+    padding-top: 5.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    color: $text-color-grey;
+    font-weight: 500;
+    li {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    li > img {
+      background-color: $svg-blue-fill;
+      height: 100px;
+      width: 100px;
+
+      &:hover {
+        background-color: red;
+        transform-origin: center;
+        transform: scale(1.1);
+        transition: 0.4s ease-out;
+      }
+    }
+  }
+}
