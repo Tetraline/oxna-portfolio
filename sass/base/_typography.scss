@@ -5,3 +5,17 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+h2 {
+  u {
+    text-decoration: none;
+    background-image: linear-gradient($accent-color-blue, $accent-color-blue);
+    // Not really the intended use of linear-gradient, but it works
+    background-position: 10px 1.4375rem;
+    background-repeat: repeat-x;
+    background-size: 1px 0.9375rem;
+  }
+
+  font-size: 2rem;
+  font-weight: 600;
+}
