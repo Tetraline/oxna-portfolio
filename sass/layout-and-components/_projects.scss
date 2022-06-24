@@ -1,7 +1,55 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/functions" as *;
+$card-width: 90vw;
+
 .projects {
   .projects__heading {
     padding-top: 8rem;
     display: flex;
     justify-content: center;
+  }
+
+  .projects__list {
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > img {
+        margin-top: 60px;
+        width: $card-width;
+
+        border-style: solid;
+        border-color: $accent-color-lighter-blue;
+        border-top-width: calc(pxToVw(77) * 100vw);
+        border-left-width: calc(pxToVw(20) * 100vw);
+        border-right-width: calc(pxToVw(20) * 100vw);
+      }
+      small {
+        width: $card-width;
+        font-size: calc(pxToVw(14.35) * 100vw);
+        font-weight: 600;
+        color: $accent-color-blue;
+      }
+      h3 {
+        width: $card-width;
+        font-size: calc(pxToVw(34) * 100vw);
+        font-weight: 600;
+        color: $text-color-dark-blue;
+      }
+      p {
+        width: $card-width;
+        font-size: calc(pxToVw(16) * 100vw);
+        font-weight: 400;
+        color: $text-color-grey;
+      }
+      div {
+        width: $card-width;
+        display: flex;
+        a {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
   }
 }

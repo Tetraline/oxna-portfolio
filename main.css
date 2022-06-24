@@ -94,6 +94,46 @@ h2 u {
   display: flex;
   justify-content: center;
 }
+.projects .projects__list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .projects__list li > img {
+  margin-top: 60px;
+  width: 90vw;
+  border-style: solid;
+  border-color: #e3f6f5;
+  border-top-width: 17.9906542056vw;
+  border-left-width: 4.6728971963vw;
+  border-right-width: 4.6728971963vw;
+}
+.projects .projects__list li small {
+  width: 90vw;
+  font-size: 3.3528037383vw;
+  font-weight: 600;
+  color: #bae8e8;
+}
+.projects .projects__list li h3 {
+  width: 90vw;
+  font-size: 7.9439252336vw;
+  font-weight: 600;
+  color: #272643;
+}
+.projects .projects__list li p {
+  width: 90vw;
+  font-size: 3.738317757vw;
+  font-weight: 400;
+  color: #8c9cb1;
+}
+.projects .projects__list li div {
+  width: 90vw;
+  display: flex;
+}
+.projects .projects__list li div a {
+  display: flex;
+  align-items: center;
+}
 
 .skills .skills__heading {
   padding-top: 7rem;
