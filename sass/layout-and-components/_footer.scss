@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/functions" as *;
+
+.footer {
+  background-color: $text-color-dark-blue;
+  height: calc(pxToVw(216) * 100vw);
+
+  display: grid;
+  grid-template-columns: 23fr 18fr 18fr 18fr 23fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". github linkedin cv ."
+    "address address address address address";
+  justify-items: center;
+  align-items: center;
+
+  .footer__nav-item {
+    height: calc(pxToVw(45) * 100vw);
+    width: calc(pxToVw(45) * 100vw);
+    border: none;
+    background-color: $accent-color-blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--github {
+      grid-area: github;
+    }
+    &--linkedin {
+      grid-area: linkedin;
+    }
+    &--cv {
+      grid-area: cv;
+    }
+  }
+  .footer__address {
+    grid-area: address;
+    align-self: start;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(pxToVw(18) * 100vw);
+  }
+}
