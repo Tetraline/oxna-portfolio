@@ -34,4 +34,20 @@
       }
     }
   }
+  .skills__desktop-only-text {
+    display: none;
+  }
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .skills__desktop-only-text {
+      margin-top: 62px;
+      display: block;
+      max-width: 484px;
+      font-size: 1rem;
+      color: $text-color-grey;
+      text-align: center;
+    }
+  }
 }
