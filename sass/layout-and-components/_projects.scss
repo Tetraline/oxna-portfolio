@@ -67,6 +67,65 @@ $card-width: 90vw;
           }
         }
       }
+      &:nth-child(6),
+      &:nth-child(5),
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    $card-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .projects__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1800px;
+      li {
+        width: 440px;
+        align-items: flex-start;
+        margin: 49px;
+        > img {
+          width: $card-width;
+          border-top-width: 77px;
+          border-left-width: 20px;
+          border-right-width: 20px;
+        }
+        small {
+          font-size: 1rem;
+          max-width: $card-width;
+          margin-top: 38px;
+        }
+        h3 {
+          max-width: $card-width;
+          font-size: 2.375rem;
+          margin-top: 5px;
+        }
+        p {
+          font-size: 1.125rem;
+          margin-top: 29px;
+          width: $card-width;
+        }
+        div {
+          max-width: $card-width;
+          margin-top: 31px;
+          a {
+            font-size: 1rem;
+            margin-right: 39px;
+            img {
+              margin-left: 11.5px;
+            }
+          }
+        }
+        &:nth-child(6),
+        &:nth-child(5),
+        &:nth-child(4) {
+          display: flex;
+        }
+      }
     }
   }
 }
