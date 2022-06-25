@@ -26,6 +26,29 @@ h2 u {
   background-size: 1px 0.9375rem;
 }
 
+.about-me {
+  margin-top: 187px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me .about-me__heading {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: 600;
+}
+.about-me .about-me__image {
+  margin-top: 95px;
+  width: 70%;
+}
+.about-me .about-me__text {
+  margin-top: 75px;
+  font-size: 4.2056074766vw;
+  width: 86%;
+  color: #8c9cb1;
+  line-height: 7.5700934579vw;
+}
+
 .header {
   display: flex;
   height: 5.625rem;
