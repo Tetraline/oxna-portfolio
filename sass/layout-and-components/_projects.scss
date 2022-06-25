@@ -29,25 +29,42 @@ $card-width: 90vw;
         font-size: calc(pxToVw(14.35) * 100vw);
         font-weight: 600;
         color: $accent-color-blue;
+
+        margin-top: calc(pxToVw(38) * 100vw);
       }
       h3 {
         width: $card-width;
         font-size: calc(pxToVw(34) * 100vw);
         font-weight: 600;
         color: $text-color-dark-blue;
+
+        margin-top: calc(pxToVw(5) * 100vw);
       }
       p {
         width: $card-width;
         font-size: calc(pxToVw(16) * 100vw);
         font-weight: 400;
         color: $text-color-grey;
+
+        margin-top: calc(pxToVw(26) * 100vw);
       }
       div {
         width: $card-width;
         display: flex;
+
+        margin-top: calc(pxToVw(31) * 100vw);
+
         a {
           display: flex;
           align-items: center;
+          font-weight: 600;
+          font-size: calc(pxToVw(14.35) * 100vw);
+          color: $text-color-dark-blue;
+          text-decoration: none;
+          margin-right: calc(pxToVw(39) * 100vw);
+          img {
+            margin-left: calc(pxToVw(11.5) * 100vw);
+          }
         }
       }
     }

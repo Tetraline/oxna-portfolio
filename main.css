@@ -113,26 +113,38 @@ h2 u {
   font-size: 3.3528037383vw;
   font-weight: 600;
   color: #bae8e8;
+  margin-top: 8.8785046729vw;
 }
 .projects .projects__list li h3 {
   width: 90vw;
   font-size: 7.9439252336vw;
   font-weight: 600;
   color: #272643;
+  margin-top: 1.1682242991vw;
 }
 .projects .projects__list li p {
   width: 90vw;
   font-size: 3.738317757vw;
   font-weight: 400;
   color: #8c9cb1;
+  margin-top: 6.0747663551vw;
 }
 .projects .projects__list li div {
   width: 90vw;
   display: flex;
+  margin-top: 7.2429906542vw;
 }
 .projects .projects__list li div a {
   display: flex;
   align-items: center;
+  font-weight: 600;
+  font-size: 3.3528037383vw;
+  color: #272643;
+  text-decoration: none;
+  margin-right: 9.1121495327vw;
+}
+.projects .projects__list li div a img {
+  margin-left: 2.6869158879vw;
 }
 
 .skills .skills__heading {
