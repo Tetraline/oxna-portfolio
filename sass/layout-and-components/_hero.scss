@@ -47,4 +47,26 @@
       top: 0.6rem;
     }
   }
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hero__subtitle {
+      font-size: 2rem;
+    }
+    .hero__title {
+      font-size: 5rem;
+      max-width: 1108px;
+      text-align: center;
+      u {
+        background-image: none;
+      }
+    }
+    .hero__button {
+      width: 20rem;
+      font-size: 1.25rem;
+      img {
+      }
+    }
+  }
 }
