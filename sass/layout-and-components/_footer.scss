@@ -42,4 +42,20 @@
     font-weight: 400;
     font-size: calc(pxToVw(18) * 100vw);
   }
+  @media only screen and (min-width: 768px) {
+    height: 9.69rem;
+    grid-template-columns: 1fr 60px 60px 60px 60px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "address github linkedin cv .";
+    .footer__nav-item {
+      height: 2.81rem;
+      width: 2.81rem;
+    }
+    .footer__address {
+      font-size: 1.125rem;
+      align-self: center;
+      justify-self: start;
+      margin-left: 119px;
+    }
+  }
 }

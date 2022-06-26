@@ -49,6 +49,33 @@ h2 u {
   color: #8c9cb1;
   line-height: 7.5700934579vw;
 }
+@media only screen and (min-width: 768px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas: "heading image" "text image";
+    justify-items: center;
+    align-items: center;
+    margin-left: 7.75rem;
+  }
+  .about-me .about-me__heading {
+    grid-area: heading;
+    font-size: 3rem;
+    justify-self: start;
+    align-self: end;
+  }
+  .about-me .about-me__image {
+    grid-area: image;
+  }
+  .about-me .about-me__text {
+    grid-area: text;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    max-width: 740px;
+    justify-self: start;
+  }
+}
 
 .footer {
   background-color: #272643;
@@ -87,6 +114,24 @@ h2 u {
   font-style: normal;
   font-weight: 400;
   font-size: 4.2056074766vw;
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    height: 9.69rem;
+    grid-template-columns: 1fr 60px 60px 60px 60px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "address github linkedin cv .";
+  }
+  .footer .footer__nav-item {
+    height: 2.81rem;
+    width: 2.81rem;
+  }
+  .footer .footer__address {
+    font-size: 1.125rem;
+    align-self: center;
+    justify-self: start;
+    margin-left: 119px;
+  }
 }
 
 .header {
@@ -151,6 +196,33 @@ h2 u {
   position: relative;
   top: 0.6rem;
 }
+@media only screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero__subtitle {
+    font-size: 2rem;
+  }
+  .hero .hero__title {
+    font-size: 5rem;
+    max-width: 1108px;
+    text-align: center;
+  }
+  .hero .hero__title u {
+    background-image: none;
+    background-image: url(../../img/pen-underline.svg);
+    background-position: 0px 85px;
+    background-size: contain;
+    padding-bottom: 40px;
+  }
+  .hero .hero__button {
+    width: 20rem;
+    font-size: 1.25rem;
+  }
+}
+
 .projects .projects__heading {
   padding-top: 8rem;
   display: flex;
@@ -208,6 +280,62 @@ h2 u {
 .projects .projects__list li div a img {
   margin-left: 2.6869158879vw;
 }
+.projects .projects__list li:nth-child(6), .projects .projects__list li:nth-child(5), .projects .projects__list li:nth-child(4) {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects .projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1800px;
+  }
+  .projects .projects__list li {
+    width: 440px;
+    align-items: flex-start;
+    margin: 49px;
+  }
+  .projects .projects__list li > img {
+    width: 440px;
+    border-top-width: 77px;
+    border-left-width: 20px;
+    border-right-width: 20px;
+  }
+  .projects .projects__list li small {
+    font-size: 1rem;
+    max-width: 440px;
+    margin-top: 38px;
+  }
+  .projects .projects__list li h3 {
+    max-width: 440px;
+    font-size: 2.375rem;
+    margin-top: 5px;
+  }
+  .projects .projects__list li p {
+    font-size: 1.125rem;
+    margin-top: 29px;
+    width: 440px;
+  }
+  .projects .projects__list li div {
+    max-width: 440px;
+    margin-top: 31px;
+  }
+  .projects .projects__list li div a {
+    font-size: 1rem;
+    margin-right: 39px;
+  }
+  .projects .projects__list li div a img {
+    margin-left: 11.5px;
+  }
+  .projects .projects__list li:nth-child(6), .projects .projects__list li:nth-child(5), .projects .projects__list li:nth-child(4) {
+    display: flex;
+  }
+}
 
 .skills .skills__heading {
   padding-top: 7rem;
@@ -239,4 +367,22 @@ h2 u {
   transform-origin: center;
   transform: scale(1.1);
   transition: 0.4s ease-out;
+}
+.skills .skills__desktop-only-text {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills .skills__desktop-only-text {
+    margin-top: 62px;
+    display: block;
+    max-width: 484px;
+    font-size: 1rem;
+    color: #8c9cb1;
+    text-align: center;
+  }
 }
