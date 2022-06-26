@@ -1,0 +1,26 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/variables" as *;
+
+.about-me {
+  margin-top: 187px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .about-me__heading {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: 600;
+  }
+  .about-me__image {
+    margin-top: 95px;
+    width: 70%;
+  }
+  .about-me__text {
+    margin-top: 75px;
+    font-size: calc(pxToVw(18) * 100vw);
+    width: 86%;
+    color: $text-color-grey;
+    line-height: calc(pxToVw(32.4) * 100vw);
+  }
+}
