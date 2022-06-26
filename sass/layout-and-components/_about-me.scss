@@ -23,4 +23,32 @@
     color: $text-color-grey;
     line-height: calc(pxToVw(32.4) * 100vw);
   }
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas:
+      "heading image"
+      "text image";
+    justify-items: center;
+    align-items: center;
+
+    margin-left: 7.75rem;
+    .about-me__heading {
+      grid-area: heading;
+      font-size: 3rem;
+      justify-self: start;
+      align-self: end;
+    }
+    .about-me__image {
+      grid-area: image;
+    }
+    .about-me__text {
+      grid-area: text;
+      font-size: 1.125rem;
+      line-height: 2rem;
+      max-width: 740px;
+      justify-self: start;
+    }
+  }
 }
