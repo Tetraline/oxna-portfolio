@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -58,6 +59,9 @@ h2 u {
     justify-items: center;
     align-items: center;
     margin-left: 7.75rem;
+    margin: auto;
+    max-width: 1500px;
+    padding-bottom: 30px;
   }
   .about-me .about-me__heading {
     grid-area: heading;
@@ -153,6 +157,31 @@ h2 u {
   background-color: transparent;
   border: 0;
 }
+@media only screen and (min-width: 768px) {
+  .header .header__mobile-menu-toggle {
+    display: none;
+  }
+  .header .header__navbar {
+    display: block;
+    position: absolute;
+    right: 9.6rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    color: #8c9cb1;
+  }
+  .header .header__navbar li {
+    margin-right: 3.38rem;
+  }
+  .header .header__navbar button {
+    background: #bae8e8;
+    border: 1px solid #272643;
+    border-radius: 10px;
+    width: 9rem;
+    height: 2.8rem;
+    font-weight: 700;
+  }
+}
 
 .hero {
   margin: 16px;
@@ -216,6 +245,7 @@ h2 u {
     background-position: 0px 85px;
     background-size: contain;
     padding-bottom: 40px;
+    white-space: nowrap;
   }
   .hero .hero__button {
     width: 20rem;
@@ -363,10 +393,11 @@ h2 u {
   width: 100px;
 }
 .skills .skills__list li > img:hover {
-  background-color: red;
+  background-color: #845bb3;
   transform-origin: center;
   transform: scale(1.1);
   transition: 0.4s ease-out;
+  transform: rotate(360deg);
 }
 .skills .skills__desktop-only-text {
   display: none;
