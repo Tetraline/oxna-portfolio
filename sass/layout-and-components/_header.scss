@@ -1,3 +1,4 @@
+@use "../abstracts/variables" as *;
 .header {
   display: flex;
   height: 5.625rem;
@@ -19,5 +20,31 @@
     right: 50px;
     background-color: transparent;
     border: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .header__mobile-menu-toggle {
+      display: none;
+    }
+    .header__navbar {
+      display: block;
+      position: absolute;
+      right: 9.6rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.125rem;
+      color: $text-color-grey;
+      li {
+        margin-right: 3.38rem;
+      }
+      button {
+        background: $accent-color-blue;
+        border: 1px solid $text-color-dark-blue;
+        border-radius: 10px;
+        width: 9rem;
+        height: 2.8rem;
+        font-weight: 700;
+      }
+    }
   }
 }
