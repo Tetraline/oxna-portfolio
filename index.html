@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel S Portfolio Website</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <header class="header">
-      <img
-        class="header__logo"
-        src="./img/code-logo.svg"
-        alt="Logo with no meaning"
-      />
-      <h1 class="header__my-name">Daniel S</h1>
-      <ul class="header__navbar">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <button>Get In Touch</button>
-      </ul>
-      <button class="header__mobile-menu-toggle">
-        <img src="./img/mobile-nav-button.svg" alt="Navigation Menu Toggle" />
-      </button>
-    </header>
-    <!--todo: Add mobile navigation menu here? To toggle when button pressed?-->
-    <section class="hero">
-      <p class="hero__subtitle">Hey! I'm Daniel</p>
-      <h2 class="hero__title">
-        A Junior <u>Software Developer</u> based in the UK.
-      </h2>
-      <button class="hero__button" onclick="location.href='#skills'">
-        Take a look at my work
-        <img
-          src="./img/arrow-right-down.svg"
-          alt="Arrow telling the user scroll down"
-        />
-      </button>
-    </section>
-    <section id="skills" class="skills">
-      <h2 class="skills__heading"><u>Technical Skills</u></h2>
-      <p class="skills__desktop-only-text">
-        Here is some text that only appears on the desktop site. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Iusto repellat dolorem at
-        asperiores. Suscipit nihil illum est, rem natus quis magni, beatae ipsum
-        reprehenderit eos dignissimos magnam! Earum, quisquam sit?
-      </p>
-      <!-- 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel S Portfolio Website</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="./img/code-logo.svg" alt="Logo with no meaning" />
+    <h1 class="header__my-name">Daniel S</h1>
+    <ul class="header__navbar">
+      <li>Home</li>
+      <li>About</li>
+      <li>Projects</li>
+      <button>Get In Touch</button>
+    </ul>
+    <button class="header__mobile-menu-toggle">
+      <img src="./img/mobile-nav-button.svg" alt="Navigation Menu Toggle" />
+    </button>
+  </header>
+  <!--todo: Add mobile navigation menu here? To toggle when button pressed?-->
+  <section class="hero">
+    <p class="hero__subtitle">Hey! I'm Daniel</p>
+    <h2 class="hero__title">
+      A Junior <u>Software Developer</u> based in the UK.
+    </h2>
+    <button class="hero__button" onclick="location.href='#skills'">
+      Take a look at my work
+      <img src="./img/arrow-right-down.svg" alt="Arrow telling the user scroll down" />
+    </button>
+  </section>
+  <section id="skills" class="skills">
+    <h2 class="skills__heading"><u>Technical Skills</u></h2>
+    <p class="skills__desktop-only-text">
+      Here is some text that only appears on the desktop site. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Iusto repellat dolorem at
+      asperiores. Suscipit nihil illum est, rem natus quis magni, beatae ipsum
+      reprehenderit eos dignissimos magnam! Earum, quisquam sit?
+    </p>
+    <!-- 
       These icons are imported using CSS masks, this is the only way
       I have found to colour them using my main.css (without using
       Javascript).
@@ -55,173 +50,152 @@
       by $svg-blue-fill in my variables.scss.
       96% support on https://caniuse.com/css-masks
       , working on my Chrome, Firefox, iPhone Safari. -->
-      <ul class="skills__list">
-        <li>
-          <img style="-webkit-mask: url(./img/git.svg) no-repeat center;"" />
+    <ul class="skills__list">
+      <li>
+        <img style="-webkit-mask: url(./img/git.svg) no-repeat center;"" />
           <p>GIT</p>
         </li>
         <li>
-          <img style="-webkit-mask: url(./img/html5.svg) no-repeat center" />
-          <p>HTML5</p>
-        </li>
-        <li>
-          <img style="-webkit-mask: url(./img/css3.svg) no-repeat center" />
-          <p>CSS3</p>
-        </li>
-        <li>
-          <img
-            style="-webkit-mask: url(./img/javascript.svg) no-repeat center"
-          />
-          <p>Javascript</p>
-        </li>
-        <li>
-          <img style="-webkit-mask: url(./img/scss.svg) no-repeat center" />
-          <p>SCSS</p>
-        </li>
-        <li>
-          <img style="-webkit-mask: url(./img/bem.svg) no-repeat center" />
-          <p>BEM</p>
-        </li>
-        <li>
-          <img style="-webkit-mask: url(./img/react.svg) no-repeat center" />
-          <p>React</p>
-        </li>
-        <li>
-          <img style="-webkit-mask: url(./img/java.svg) no-repeat center" />
-          <p>Java</p>
-        </li>
-        <li>
-          <img style="-webkit-mask: url(./img/spring.svg) no-repeat center" />
-          <p>Spring Boot</p>
-        </li>
-      </ul>
-    </section>
-    <section class="projects">
-      <h2 class="projects__heading"><u>My Projects</u></h2>
-      <ul class="projects__list">
-        <li>
-          <img src="http://placekitten.com/350/215" alt="" /><small
-            >REACT</small
-          >
-          <h3>Client Project</h3>
-          <p>
-            Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
-            urna gravida nisl, tortor sapien nec sollicitudin.
-          </p>
-          <div>
-            <a href="#"
-              >Code <img src="./img/code-logo-small-button.svg" alt="" /></a
-            ><a href="#"
-              >Preview <img src="./img/preview-logo-small-button.svg" alt=""
-            /></a>
-          </div>
-        </li>
-        <li>
-          <img src="http://placekitten.com/350/215" alt="" /><small>JAVA</small>
-          <h3>Video Game</h3>
-          <p>
-            Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
-            urna gravida nisl, tortor sapien nec sollicitudin.
-          </p>
-          <div>
-            <a href="#"
-              >Code <img src="./img/code-logo-small-button.svg" alt="" /></a
-            ><a href="#"
-              >Preview <img src="./img/preview-logo-small-button.svg" alt=""
-            /></a>
-          </div>
-        </li>
-        <li>
-          <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
-          <h3>Website</h3>
-          <p>
-            Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
-            urna gravida nisl, tortor sapien nec sollicitudin.
-          </p>
-          <div>
-            <a href="#"
-              >Code <img src="./img/code-logo-small-button.svg" alt="" /></a
-            ><a href="#"
-              >Preview <img src="./img/preview-logo-small-button.svg" alt=""
-            /></a>
-          </div>
-        </li>
-        <li>
-          <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
-          <h3>Desktop Only 1</h3>
-          <p>
-            Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
-            urna gravida nisl, tortor sapien nec sollicitudin.
-          </p>
-          <div>
-            <a href="#"
-              >Code <img src="./img/code-logo-small-button.svg" alt="" /></a
-            ><a href="#"
-              >Preview <img src="./img/preview-logo-small-button.svg" alt=""
-            /></a>
-          </div>
-        </li>
-        <li>
-          <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
-          <h3>Desktop Only 2</h3>
-          <p>
-            Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
-            urna gravida nisl, tortor sapien nec sollicitudin.
-          </p>
-          <div>
-            <a href="#"
-              >Code <img src="./img/code-logo-small-button.svg" alt="" /></a
-            ><a href="#"
-              >Preview <img src="./img/preview-logo-small-button.svg" alt=""
-            /></a>
-          </div>
-        </li>
-        <li>
-          <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
-          <h3>Desktop Only 3</h3>
-          <p>
-            Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
-            urna gravida nisl, tortor sapien nec sollicitudin.
-          </p>
-          <div>
-            <a href="#"
-              >Code <img src="./img/code-logo-small-button.svg" alt="" /></a
-            ><a href="#"
-              >Preview <img src="./img/preview-logo-small-button.svg" alt=""
-            /></a>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="about-me">
-      <h1 class="about-me__heading">About Me</h1>
-      <img src="./img/me.jpeg" alt="A picture of me" class="about-me__image" />
-      <p class="about-me__text">
-        Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra
-        sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna
-        mus. Sodales pretium tempus tincidunt tellus in imperdiet. Integer fames
-        maecenas amet, consequat. Et cursus gravida enim lorem urna, vivamus
-        pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies
-        ante sagittis commodo. Nunc malesuada amet at eget consectetur sit. Nibh
-        in ut diam nulla sed porttitor et. At neque tellus convallis urna,
-        sodales neque. In enim auctor diam nunc duis rutrum adipiscing
-        pellentesque eu. In sollicitudin neque dictum neque proin pretium ante.
-        Ac bibendum vestibulum ullamcorper pellentesque scelerisque. Neque
-        senectus eu dictum ultricies tellus nisl eget sem libero. Eu sit quis
-        vestibulum donec cras elementum.
-      </p>
-    </section>
-    <footer class="footer">
-      <button class="footer__nav-item footer__nav-item--github">
-        <img src="./img/github.svg" alt="github link" />
-      </button>
-      <button class="footer__nav-item footer__nav-item--linkedin">
-        <img src="./img/linkedin.svg" alt="linkedin link" />
-      </button>
-      <button class="footer__nav-item footer__nav-item--cv">
-        <img src="./img/cv.svg" alt="CV Link" />
-      </button>
-      <address class="footer__address">joebloggs@gmail.com</address>
-    </footer>
-  </body>
+          <img style=" -webkit-mask: url(./img/html5.svg) no-repeat center" />
+        <p>HTML5</p>
+      </li>
+      <li>
+        <img style="-webkit-mask: url(./img/css3.svg) no-repeat center" />
+        <p>CSS3</p>
+      </li>
+      <li>
+        <img style="-webkit-mask: url(./img/javascript.svg) no-repeat center" />
+        <p>Javascript</p>
+      </li>
+      <li>
+        <img style="-webkit-mask: url(./img/scss.svg) no-repeat center" />
+        <p>SCSS</p>
+      </li>
+      <li>
+        <img style="-webkit-mask: url(./img/bem.svg) no-repeat center" />
+        <p>BEM</p>
+      </li>
+      <li>
+        <img style="-webkit-mask: url(./img/react.svg) no-repeat center" />
+        <p>React</p>
+      </li>
+      <li>
+        <img style="-webkit-mask: url(./img/java.svg) no-repeat center" />
+        <p>Java</p>
+      </li>
+      <li>
+        <img style="-webkit-mask: url(./img/spring.svg) no-repeat center" />
+        <p>Spring Boot</p>
+      </li>
+    </ul>
+  </section>
+  <section class="projects">
+    <h2 class="projects__heading"><u>My Projects</u></h2>
+    <ul class="projects__list">
+      <li>
+        <img src="http://placekitten.com/350/215" alt="" /><small>REACT</small>
+        <h3>Client Project</h3>
+        <p>
+          Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
+          urna gravida nisl, tortor sapien nec sollicitudin.
+        </p>
+        <div>
+          <a href="#">Code <img src="./img/code-logo-small-button.svg" alt="" /></a><a href="#">Preview <img
+              src="./img/preview-logo-small-button.svg" alt="" /></a>
+        </div>
+      </li>
+      <li>
+        <img src="http://placekitten.com/350/215" alt="" /><small>JAVA</small>
+        <h3>Video Game</h3>
+        <p>
+          Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
+          urna gravida nisl, tortor sapien nec sollicitudin.
+        </p>
+        <div>
+          <a href="#">Code <img src="./img/code-logo-small-button.svg" alt="" /></a><a href="#">Preview <img
+              src="./img/preview-logo-small-button.svg" alt="" /></a>
+        </div>
+      </li>
+      <li>
+        <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
+        <h3>Website</h3>
+        <p>
+          Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
+          urna gravida nisl, tortor sapien nec sollicitudin.
+        </p>
+        <div>
+          <a href="#">Code <img src="./img/code-logo-small-button.svg" alt="" /></a><a href="#">Preview <img
+              src="./img/preview-logo-small-button.svg" alt="" /></a>
+        </div>
+      </li>
+      <li>
+        <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
+        <h3>Desktop Only 1</h3>
+        <p>
+          Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
+          urna gravida nisl, tortor sapien nec sollicitudin.
+        </p>
+        <div>
+          <a href="#">Code <img src="./img/code-logo-small-button.svg" alt="" /></a><a href="#">Preview <img
+              src="./img/preview-logo-small-button.svg" alt="" /></a>
+        </div>
+      </li>
+      <li>
+        <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
+        <h3>Desktop Only 2</h3>
+        <p>
+          Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
+          urna gravida nisl, tortor sapien nec sollicitudin.
+        </p>
+        <div>
+          <a href="#">Code <img src="./img/code-logo-small-button.svg" alt="" /></a><a href="#">Preview <img
+              src="./img/preview-logo-small-button.svg" alt="" /></a>
+        </div>
+      </li>
+      <li>
+        <img src="http://placekitten.com/350/215" alt="" /><small>SCSS</small>
+        <h3>Desktop Only 3</h3>
+        <p>
+          Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
+          urna gravida nisl, tortor sapien nec sollicitudin.
+        </p>
+        <div>
+          <a href="#">Code <img src="./img/code-logo-small-button.svg" alt="" /></a><a href="#">Preview <img
+              src="./img/preview-logo-small-button.svg" alt="" /></a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="about-me">
+    <h1 class="about-me__heading">About Me</h1>
+    <img src="./img/me.jpeg" alt="A picture of me" class="about-me__image" />
+    <p class="about-me__text">
+      I have been a technology enthusiast for as long as I can remember, and
+      am now pursuing a Software Engineering course with nology. Having previously
+      achieved a Level 5 Engineering qualification, I'm experienced in
+      applying Mathematics, Design Thinking, and Teamwork to solve problems.<br>
+      The field of modern technical possibilities has widened such that it
+      cannot be surveyed by a single mind, therefore I strive to be
+      <br>
+      a) A team player, effectively contributing to the synthesis of available detail
+      <br>
+      b) A specialist in my chosen fields
+      <br>
+      This way, the full potential of technology to transform every industry can be realised.
+    </p>
+  </section>
+  <footer class="footer">
+    <button class="footer__nav-item footer__nav-item--github">
+      <img src="./img/github.svg" alt="github link" />
+    </button>
+    <button class="footer__nav-item footer__nav-item--linkedin">
+      <img src="./img/linkedin.svg" alt="linkedin link" />
+    </button>
+    <button class="footer__nav-item footer__nav-item--cv">
+      <img src="./img/cv.svg" alt="CV Link" />
+    </button>
+    <address class="footer__address">joebloggs@gmail.com</address>
+  </footer>
+</body>
+
 </html>
