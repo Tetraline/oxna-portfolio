@@ -11,6 +11,10 @@ ul {
   list-style: none;
 }
 
+body {
+  background-color: white;
+}
+
 * {
   font-family: "Inter", sans-serif;
 }
