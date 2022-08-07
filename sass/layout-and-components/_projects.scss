@@ -75,4 +75,64 @@ $card-width: 90vw;
       }
     }
   }
+  @media only screen and (min-width: 768px) {
+    $card-width: 440px;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    .projects__card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1800px;
+      margin: auto;
+      .card {
+        width: $card-width;
+        align-items: flex-start;
+        margin: 49px;
+        > .card__image {
+          width: $card-width;
+          border-top-width: 77px;
+          border-left-width: 20px;
+          border-right-width: 20px;
+        }
+        .card__info {
+          .card__skills {
+            margin-top: 38px;
+            .card__skill-icon {
+              font-size: 1rem;
+              max-width: $card-width;
+              margin-top: 38px;
+            }
+          }
+          .card__title {
+            max-width: $card-width;
+            font-size: 2.375rem;
+            margin-top: 5px;
+          }
+          .card__description {
+            font-size: 1.125rem;
+            margin-top: 29px;
+            width: $card-width;
+          }
+          .card__links {
+            max-width: $card-width;
+            margin-top: 31px;
+            .card__icon {
+              font-size: 1rem;
+              margin-right: 39px;
+              img {
+                margin-left: 11.5px;
+              }
+            }
+          }
+        }
+        &:nth-child(6),
+        &:nth-child(5),
+        &:nth-child(4) {
+          display: flex;
+        }
+      }
+    }
+  }
 }
