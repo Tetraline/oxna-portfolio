@@ -262,47 +262,51 @@ h2 u {
   display: flex;
   justify-content: center;
 }
-.projects .projects__list li {
+.projects .projects__card-container .card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.projects .projects__list li > img {
+.projects .projects__card-container .card:nth-child(6), .projects .projects__card-container .card:nth-child(5), .projects .projects__card-container .card:nth-child(4) {
+  display: none;
+}
+.projects .projects__card-container .card .card__image {
   margin-top: 60px;
   width: 90vw;
   border-style: solid;
-  border-color: #e3f6f5;
+  border-color: rgba(227, 246, 245, 0.6);
   border-top-width: 17.9906542056vw;
   border-left-width: 4.6728971963vw;
   border-right-width: 4.6728971963vw;
 }
-.projects .projects__list li small {
-  width: 90vw;
+.projects .projects__card-container .card .card__info .card__skills {
+  margin-top: 8.8785046729vw;
+}
+.projects .projects__card-container .card .card__info .card__skills .card__skill-icon {
   font-size: 3.3528037383vw;
   font-weight: 600;
   color: #bae8e8;
-  margin-top: 8.8785046729vw;
 }
-.projects .projects__list li h3 {
+.projects .projects__card-container .card .card__info .card__title {
   width: 90vw;
   font-size: 7.9439252336vw;
   font-weight: 600;
   color: #272643;
   margin-top: 1.1682242991vw;
 }
-.projects .projects__list li p {
+.projects .projects__card-container .card .card__info .card__description {
   width: 90vw;
   font-size: 3.738317757vw;
   font-weight: 400;
   color: #8c9cb1;
   margin-top: 6.0747663551vw;
 }
-.projects .projects__list li div {
+.projects .projects__card-container .card .card__info .card__links {
   width: 90vw;
   display: flex;
   margin-top: 7.2429906542vw;
 }
-.projects .projects__list li div a {
+.projects .projects__card-container .card .card__info .card__links .card__icon {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -311,62 +315,58 @@ h2 u {
   text-decoration: none;
   margin-right: 9.1121495327vw;
 }
-.projects .projects__list li div a img {
+.projects .projects__card-container .card .card__info .card__links .card__icon img {
   margin-left: 2.6869158879vw;
 }
-.projects .projects__list li:nth-child(6), .projects .projects__list li:nth-child(5), .projects .projects__list li:nth-child(4) {
-  display: none;
-}
 @media only screen and (min-width: 768px) {
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .projects .projects__list {
+  .projects .projects__card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1800px;
+    margin: auto;
   }
-  .projects .projects__list li {
+  .projects .projects__card-container .card {
     width: 440px;
     align-items: flex-start;
     margin: 49px;
   }
-  .projects .projects__list li > img {
+  .projects .projects__card-container .card > .card__image {
     width: 440px;
     border-top-width: 77px;
     border-left-width: 20px;
     border-right-width: 20px;
   }
-  .projects .projects__list li small {
+  .projects .projects__card-container .card .card__info .card__skills {
+    margin-top: 38px;
+  }
+  .projects .projects__card-container .card .card__info .card__skills .card__skill-icon {
     font-size: 1rem;
     max-width: 440px;
     margin-top: 38px;
   }
-  .projects .projects__list li h3 {
+  .projects .projects__card-container .card .card__info .card__title {
     max-width: 440px;
     font-size: 2.375rem;
     margin-top: 5px;
   }
-  .projects .projects__list li p {
+  .projects .projects__card-container .card .card__info .card__description {
     font-size: 1.125rem;
     margin-top: 29px;
     width: 440px;
   }
-  .projects .projects__list li div {
+  .projects .projects__card-container .card .card__info .card__links {
     max-width: 440px;
     margin-top: 31px;
   }
-  .projects .projects__list li div a {
+  .projects .projects__card-container .card .card__info .card__links .card__icon {
     font-size: 1rem;
     margin-right: 39px;
   }
-  .projects .projects__list li div a img {
+  .projects .projects__card-container .card .card__info .card__links .card__icon img {
     margin-left: 11.5px;
   }
-  .projects .projects__list li:nth-child(6), .projects .projects__list li:nth-child(5), .projects .projects__list li:nth-child(4) {
+  .projects .projects__card-container .card:nth-child(6), .projects .projects__card-container .card:nth-child(5), .projects .projects__card-container .card:nth-child(4) {
     display: flex;
   }
 }

@@ -24,7 +24,8 @@ $card-width: 90vw;
         width: $card-width;
 
         border-style: solid;
-        border-color: $accent-color-lighter-blue;
+        //border-color: $accent-color-lighter-blue;
+        border-color: rgba(227, 246, 245, 0.6);
         border-top-width: calc(pxToVw(77) * 100vw);
         border-left-width: calc(pxToVw(20) * 100vw);
         border-right-width: calc(pxToVw(20) * 100vw);
