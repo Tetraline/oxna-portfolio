@@ -17,7 +17,7 @@
       <li>Home</li>
       <li>About</li>
       <li>Projects</li>
-      <button>Get In Touch</button>
+      <button onclick=" window.open('https://www.linkedin.com/in/daniel-s-7ba80612b/','_blank')">Get In Touch</button>
     </ul>
     <button class="header__mobile-menu-toggle">
       <img src="./img/mobile-nav-button.svg" alt="Navigation Menu Toggle" />
@@ -36,12 +36,6 @@
   </section>
   <section id="skills" class="skills">
     <h2 class="skills__heading"><u>Technical Skills</u></h2>
-    <p class="skills__desktop-only-text">
-      Here is some text that only appears on the desktop site. Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Iusto repellat dolorem at
-      asperiores. Suscipit nihil illum est, rem natus quis magni, beatae ipsum
-      reprehenderit eos dignissimos magnam! Earum, quisquam sit?
-    </p>
     <!-- 
       These icons are imported using CSS masks, this is the only way
       I have found to colour them using my main.css (without using
@@ -69,7 +63,7 @@
       </li>
       <li>
         <img style="-webkit-mask: url(./img/scss.svg) no-repeat center" />
-        <p>SCSS</p>
+        <p>SASS</p>
       </li>
       <li>
         <img style="-webkit-mask: url(./img/bem.svg) no-repeat center" />
@@ -101,22 +95,22 @@
             <span class="card__skill-icon">REACT</span>
             <span class="card__skill-icon">SPRING BOOT</span>
           </div>
-          <h3 class="card__title">Food Delivery App</h3>
+          <h3 class="card__title">Restaurant Finder</h3>
           <p class="card__description">A React frontend allowing the user to select their location and
             see results. A Spring Boot backend for finding restaurants near the user, calculating
             distances, and estimating delivery times. </p>
           <div class="card__links">
-            <a class="card__icon" href="https://github.com/Tetraline/oxna-portfolio" target="_blank">
+            <a class="card__icon" href="https://github.com/Tetraline/full-stack-delivery-app" target="_blank">
               Code<img src="./img/code-logo-small-button.svg" alt="" />
             </a>
-            <a class="card__icon" href="https://tetraline.github.io/oxna-portfolio/" target="_blank">
+            <a class="card__icon" href="#" target="_blank" style="display:none">
               Preview<img src="./img/preview-logo-small-button.svg" alt="" />
             </a>
           </div>
         </div>
       </div>
       <div class="card">
-        <img class="card__image" src="https://placedog.net/300/175" alt="doggo" />
+        <img class="card__image" src="./img/oxna-beams.png" alt="doggo" />
         <div class="card__info">
           <div class="card__skills">
             <span class="card__skill-icon">HTML</span>
@@ -136,20 +130,20 @@
         </div>
       </div>
       <div class="card">
-        <img class="card__image" src="./img/oxna-portfolio.png" alt="Screenshot of this website on a mobile phone" />
+        <img class="card__image" src="./img/oxna-save-oom.png" alt="Screenshot of this website on a mobile phone" />
         <div class="card__info">
           <div class="card__skills">
-            <span class="card__skill-icon">HTML</span>
-            <span class="card__skill-icon">SASS</span>
+            <span class="card__skill-icon">REACT</span>
+            <span class="card__skill-icon">FIREBASE</span>
           </div>
-          <h3 class="card__title">Portfolio Site</h3>
-          <p class="card__description">Built using correct version control and modern coding standards, and deployed
-            live using a CI pipeline.​</p>
+          <h3 class="card__title">Client Project</h3>
+          <p class="card__description">An MVP delivered to a real client as part of a Scrum team, consolidating my
+            knowledge in agile, test-driven development, and clean code.</p>
           <div class="card__links">
-            <a class="card__icon" href="https://github.com/Tetraline/oxna-portfolio" target="_blank">
+            <a class="card__icon" href="https://github.com/nology-tech/save-oom-oxna" target="_blank">
               Code<img src="./img/code-logo-small-button.svg" alt="" />
             </a>
-            <a class="card__icon" href="https://tetraline.github.io/oxna-portfolio/" target="_blank">
+            <a class="card__icon" href="https://save-oom-oxna.web.app/" target="_blank">
               Preview<img src="./img/preview-logo-small-button.svg" alt="" />
             </a>
           </div>
@@ -218,34 +212,57 @@
     </div>
   </section>
   <section class="about-me">
-    <h1 class="about-me__heading">About Me</h1>
+    <h2 class="about-me__heading">About Me</h2>
     <img src="./img/me.jpeg" alt="A picture of me" class="about-me__image" />
-    <p class="about-me__text">
-      I have been a technology enthusiast for as long as I can remember, and
-      am now pursuing a Software Engineering course with nology. Having previously
-      achieved a Level 5 Engineering qualification, I'm experienced in
-      applying Mathematics, Design Thinking, and Teamwork to solve problems.<br>
-      The field of modern technical possibilities has widened such that it
-      cannot be surveyed by a single mind, therefore I strive to be
-      <br>
-      a) A team player, effectively contributing to the synthesis of available detail
-      <br>
-      b) A specialist in my chosen fields
-      <br>
-      This way, the full potential of technology to transform every industry can be realised.
-    </p>
+    <div class="about-me__content">
+      <p class="about-me__text">
+        I have been a technology enthusiast for as long as I can remember, and recently completed a 12 week software
+        engineering course with <a href="https://nology.io/">_nology</a>. The full-stack software course, combined with
+        my previous level 5 engineering
+        qualification, means I am now ready to solve problems using the most modern, relevant, and practical tools.
+      </p>
+      <h3>Work Experience</h3>
+      <table>
+        <tr>
+          <td>Delivery Rider</th>
+          <td>Deliveroo</th>
+          <td>2022 - Present</th>
+        </tr>
+        <tr>
+          <td>Warehouse Loader</td>
+          <td>Evri</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Warehouse Loader</td>
+          <td>Estée Lauder</td>
+          <td>2017 - 2018</td>
+        </tr>
+      </table>
+      <h3>Education</h3>
+      <table>
+        <tr>
+          <td>Civil Engineering DipHE, University of Southampton</th>
+          <td>2018-2021</th>
+        </tr>
+        <tr>
+          <td>A Level Maths, Physics, Economics grade AAB</td>
+          <td>2015-2017</td>
+        </tr>
+      </table>
+
+    </div>
   </section>
   <footer class="footer">
-    <button class="footer__nav-item footer__nav-item--github">
+    <button onclick=" window.open('https://github.com/Tetraline','_blank')"
+      class="footer__nav-item footer__nav-item--github">
       <img src="./img/github.svg" alt="github link" />
     </button>
-    <button class="footer__nav-item footer__nav-item--linkedin">
+    <button onclick=" window.open('https://www.linkedin.com/in/daniel-s-7ba80612b/','_blank')"
+      class="footer__nav-item footer__nav-item--linkedin">
       <img src="./img/linkedin.svg" alt="linkedin link" />
     </button>
-    <button class="footer__nav-item footer__nav-item--cv">
-      <img src="./img/cv.svg" alt="CV Link" />
-    </button>
-    <address class="footer__address">joebloggs@gmail.com</address>
+    <address class="footer__address"></address>
   </footer>
 </body>
 

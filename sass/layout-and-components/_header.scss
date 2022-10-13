@@ -5,15 +5,15 @@
   align-items: center;
   margin-left: 1.563rem;
 
-  .header__logo {
-  }
-
   .header__my-name {
     padding-left: 0.549rem;
     font-family: "DM Sans", sans-serif;
   }
   .header__navbar {
     display: none;
+    li {
+      list-style: none;
+    }
   }
   .header__mobile-menu-toggle {
     position: absolute;
@@ -44,6 +44,7 @@
         width: 9rem;
         height: 2.8rem;
         font-weight: 700;
+        cursor: pointer;
       }
     }
   }

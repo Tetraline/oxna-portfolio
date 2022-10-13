@@ -7,6 +7,7 @@
     justify-content: center;
   }
   .skills__list {
+    padding: 0;
     padding-top: 5.5rem;
 
     display: flex;
@@ -35,20 +36,18 @@
       }
     }
   }
-  .skills__desktop-only-text {
-    display: none;
+  .skills__text {
+    display: block;
+    margin: auto;
+    margin-top: 62px;
+    width: min(484px, 90%);
+    font-size: 1rem;
+    color: $text-color-grey;
+    text-align: center;
   }
   @media only screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .skills__desktop-only-text {
-      margin-top: 62px;
-      display: block;
-      max-width: 484px;
-      font-size: 1rem;
-      color: $text-color-grey;
-      text-align: center;
-    }
   }
 }

@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  .about-me__heading {
+  h2 {
     font-size: 3rem;
     color: #000000;
     font-weight: 600;
@@ -17,11 +17,28 @@
     width: 70%;
   }
   .about-me__text {
-    margin-top: 75px;
+    margin: auto;
+    margin-top: 35px;
     font-size: calc(pxToVw(18) * 100vw);
     width: 86%;
-    color: $text-color-grey;
     line-height: calc(pxToVw(32.4) * 100vw);
+    a {
+      color: black;
+    }
+  }
+  h3 {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+  .about-me__content > table {
+    width: 90%;
+    padding: 10px;
+    td {
+      border-bottom: 1px solid #ddd;
+    }
+    td {
+      padding: 10px;
+    }
   }
   @media only screen and (min-width: 768px) {
     display: grid;
@@ -37,7 +54,7 @@
     margin: auto;
     max-width: 1500px;
     padding-bottom: 30px;
-    .about-me__heading {
+    h2 {
       grid-area: heading;
       font-size: 3rem;
       justify-self: start;
@@ -47,11 +64,13 @@
       grid-area: image;
     }
     .about-me__text {
-      grid-area: text;
       font-size: 1.125rem;
       line-height: 2rem;
       max-width: 740px;
       justify-self: start;
+    }
+    .about-me__content {
+      grid-area: text;
     }
   }
 }
