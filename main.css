@@ -194,6 +194,7 @@ h2 u {
   }
   .header .header__navbar li {
     margin-right: 3.38rem;
+    display: none;
   }
   .header .header__navbar button {
     background: #bae8e8;
